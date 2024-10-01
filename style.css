@@ -1,0 +1,30 @@
+/* Container styling */
+.progress-container {
+    width: 50%;
+    height: 20px;
+    background-color: #e0e0e0; /* Grey background */
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto;
+  }
+  
+
+  
+/* The progress bar itself */
+.progress-container:hover .progress-bar {
+    height: 100%;
+    width: 0; /* Start with 0 width */
+    background-color: #4caf50; /* Green progress */
+    border-radius: 10px; /* Rounded edges */
+    animation: load 5s ease-out forwards; /* 5 seconds loading animation */
+  }
+  
+  @keyframes load {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
